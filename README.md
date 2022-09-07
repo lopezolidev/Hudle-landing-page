@@ -1,5 +1,5 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
-
+## [Live-site](https://sergioiscoding.github.io/Hudle-landing-page/huddle-landing-page-with-single-introductory-section-master/index.html)
 ## Screenshots:
 - Mobile:
   ![Screenshot_mobile](https://user-images.githubusercontent.com/94415170/188961007-15faddc6-5d07-44a6-8f37-39f706f88e7f.png)
