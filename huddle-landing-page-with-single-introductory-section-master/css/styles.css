@@ -33,6 +33,8 @@ body {
     grid-template-rows: 1fr 6fr 1fr 1fr;
 }
 
+/* header */
+
 header {
     grid-column: 2;
     grid-row: 1;
@@ -50,6 +52,8 @@ header span {
     height: 40%;
 }
 
+/* Main */
+
 main {
     grid-column: 2;
     grid-row: 2;
@@ -57,6 +61,8 @@ main {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
+
+/* === image-section === */
 
 main .image-section {
     grid-row: 1;
@@ -76,14 +82,16 @@ main .image-section span {
     width: 100%;
 }
 
+/* === Text section === */
+
 main .text-section {
     grid-row: 2;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
-    align-items: space-around;
     height: 100%;
     width: 100%;
 }
@@ -110,9 +118,16 @@ main .text-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
     box-shadow: 0px 2px 16px 1px rgba(0,0,0,0.4);
+    transition: all .4s ease-in-out;
 }
+
+.text-section a:hover {
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+/* footer */
 
 footer {
     grid-column: 2;
@@ -128,11 +143,20 @@ footer span {
     width: 2.4rem;
 }
 
+
+
 footer span:nth-of-type(1) {
     background-image: url('../images/facebook-circled.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+footer span:nth-of-type(1):hover {
+    background-image: url('../images/facebook-circled_1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain
 }
 
 footer span:nth-of-type(2) {
@@ -141,17 +165,109 @@ footer span:nth-of-type(2) {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+footer span:nth-of-type(2):hover {
+    background-image: url('../images/twitter-circled_1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 footer span:nth-of-type(3) {
     background-image: url('../images/instagram2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+footer span:nth-of-type(3):hover {
+    background-image: url('../images/instagram.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* attribution styles */
+
 .attribution-section {
-    grid-column: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row: 4;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-block-end: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.attribution-section .attribution-button {
+    padding: 0.6rem;
+    background-color: white;
+    color: var(--Violet);
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+    text-decoration: none;
+}
+.attribution-button:hover {
+    color: var(--Violet);
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url('../images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--Violet);
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+    }
+    header span{
+        width: 20%;
+        height: 60%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        grid-template-rows: 1fr;
+        grid-row: 2;
+    }
+    main .image-section {
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+    main .text-section {
+        grid-column: 2;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    main .text-section h1 {
+        font-size: 3rem;
+        text-align: start;
+    }
+    main .text-section p {
+        text-align: start;
+    }
+    main .text-section a {
+        text-align: start;
+        font-size: 1.6rem;
+        padding-inline: 3rem;
+    }   
+    footer {
+        justify-content: flex-end;
+    }
+    footer span {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
 }

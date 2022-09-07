@@ -1,0 +1,55 @@
+body {
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Violet);
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+header span{
+    width: 20%;
+    height: 60%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr;
+    grid-row: 2;
+}
+main .image-section {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+main .text-section {
+    grid-column: 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+main .text-section h1 {
+    font-size: 3rem;
+    text-align: start;
+}
+main .text-section p {
+    text-align: start;
+}
+main .text-section a {
+    text-align: start;
+    font-size: 1.6rem;
+    padding-inline: 3rem;
+}   
+footer {
+    justify-content: flex-end;
+}
+footer span {
+    height: 3.4rem;
+    width: 3.4rem;
+}
