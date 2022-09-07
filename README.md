@@ -1,5 +1,12 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
+## Screenshots:
+- Mobile:
+  ![Screenshot_mobile](https://user-images.githubusercontent.com/94415170/188961007-15faddc6-5d07-44a6-8f37-39f706f88e7f.png)
+
+- Desktop:
+![Screenshot_desktop](https://user-images.githubusercontent.com/94415170/188961041-24034b81-0fc6-41c8-9dc2-c8954b7201be.png)
+
 ## Knowledge used:
 
 - Semantic HTML5 markup
